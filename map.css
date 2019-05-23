@@ -1,0 +1,115 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#map {
+    height: 100%;
+}
+
+.homeBtn {
+    position: absolute;
+    top: 11px;
+    width: 155px;
+    height: 38px;
+    left: 34%;
+    background-color: green;
+    border: none;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.homeBtn:hover {
+    transition: all 0.5s ease;
+    background-color: black;
+}
+
+.homeBtn a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: 'Montserrat Regular', sans-serif;
+}
+
+#description {
+    font-family: 'Montserrat Regular', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+#infowindow-content .title {
+    font-weight: bold;
+}
+
+#infowindow-content {
+    display: none;
+}
+
+#map #infowindow-content {
+    display: inline;
+}
+
+.pac-card {
+    margin: 10px 10px 0 0;
+    border-radius: 2px 0 0 2px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    outline: none;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    background-color: #fff;
+    font-family: 'Montserrat Regular', sans-serif;
+}
+
+#pac-container {
+    padding-bottom: 12px;
+    margin-right: 12px;
+}
+
+.pac-controls {
+    display: inline-block;
+    padding: 5px 11px;
+}
+
+.pac-controls label {
+    font-family: 'Montserrat Regular', sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+}
+
+#pac-input {
+    background-color: #fff;
+    font-family: 'Montserrat Regular', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    margin-left: 12px;
+    padding: 0 11px 0 13px;
+    text-overflow: ellipsis;
+    width: 400px;
+}
+
+#pac-input:focus {
+    border-color: #4d90fe;
+}
+
+#title {
+    color: #fff;
+    background-color: #4d90fe;
+    font-size: 25px;
+    font-weight: 500;
+    padding: 6px 12px;
+}
+#target {
+    width: 345px;
+}
+
+.controls {
+    position: absolute;
+    left: 20%;
+    top: 1%;
+    height: 37px;
+}
+
+
+
+

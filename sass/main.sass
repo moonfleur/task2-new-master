@@ -1,0 +1,468 @@
+@font-face
+  font-family: 'Montserrat Bold', sans-serif
+  src: url("fonts/montserrat/montserrat-bold-webfont.woff")
+
+
+@font-face
+  font-family: 'Montserrat Regular', sans-serif
+  src: url("fonts/montserrat/montserrat-black-webfont.woff")
+
+
+*
+  padding: 0
+  margin: 0
+  box-sizing: border-box
+
+.wrapper
+  background: url("img/bg.jpg") no-repeat
+  background-size: cover
+  height: 100vh
+/*filter: brightness(40%);*/
+
+
+.brightness
+  background-color: rgba(0, 0, 0, 0.57)
+  height: 100vh
+
+
+nav
+  display: flex
+  justify-content: space-around
+  align-items: center
+  min-height: 8vh
+  font-family: 'Poppins', sans-serif
+
+.navbar
+  display: none
+  position: absolute
+  top: 0
+  right: 0
+  padding: 80px 125px 0 40px
+  background-color: black
+  height: 100%
+
+
+.nav-links
+  display: none
+  right: 0
+  height: 100%
+  top: 0
+  align-items: center
+  width: 18%
+  transform: translate(100%)
+  transition: transform 0.5s ease-in
+  background-color: black
+
+.nav-links li
+  margin: 10px 0 19px 0
+  list-style: none
+  opacity: 0
+  transition: all 0.5s ease
+  font-family: 'Montserrat Regular', sans-serif
+
+
+.nav-links a:hover
+  color: green
+  transition: all 0.5s ease
+
+
+.nav-links a
+  color: #e2e7e3
+  text-decoration: none
+  letter-spacing: 3px
+  font-weight: bold
+  font-size: 14px
+
+
+.burger
+  cursor: pointer
+  display: block
+  right: 10px
+  position: absolute
+
+.burger div
+  width: 20px
+  height: 2px
+  background-color: #e2e7e3
+  margin: 6px
+  transition: all 0.3s ease
+
+
+.nav-active
+  transform: translate(0%)
+
+
+//@keyframes navLinkFade
+//from {
+//opacity: 0;
+//transform: translateX(50px);
+//}
+//to {
+//opacity: 1;
+//transform: translateX(0px);
+//}
+
+
+.toggle .line1
+  transform: rotate(-45deg) translate(-5px, 6px)
+
+
+.toggle .line2
+  opacity: 0
+
+
+.toggle .line3
+  transform: rotate(45deg) translate(-5px, -6px)
+
+.icons-logo
+  position: absolute
+  right: 35px
+  top: 270px
+  display: block
+
+
+.fa-facebook-f
+  color: white
+  margin: 6px 8px
+
+
+.fa-instagram
+  color: white
+  margin: 6px 7px
+
+.gray-icons i
+  color: white
+
+
+.fa-behance
+  color: white
+  margin: 6px 5px
+
+
+.fa-twitter
+  color: white
+  margin: 6px 6px
+
+
+.fa-dribbble
+  color: white
+  margin: 6px 5px
+
+
+.icons
+  width: 30px
+  height: 30px
+  border: 1.5px solid white
+  border-radius: 15px
+  margin-bottom: 15px
+  cursor: pointer
+  transition: all 0.5s ease
+
+
+.icons:hover
+  background-color: green
+  transition: all 0.5s ease
+
+
+.icons img
+  width: 12px
+  margin: 7.5px
+
+
+.nav-paragr
+  display: none
+  position: absolute
+  width: 13%
+  margin: 0 -98px
+  top: 343px
+  right: 135px
+  color: gray
+  font-family: 'Montserrat Regular', sans-serif
+  font-size: 14px
+  line-height: 24px
+
+
+.one-word
+  color: lightgrey
+
+
+.menu-name
+  text-transform: uppercase
+  letter-spacing: 2px
+  position: absolute
+  right: 60px
+  color: green
+  font-size: 13px
+
+
+.nav_menu
+  display: none
+  letter-spacing: 2px
+  text-transform: uppercase
+  color: green
+  font-size: 13px
+  font-family: 'Montserrat Regular', sans-serif
+  position: absolute
+  top: 23px
+  right: 136px
+
+
+.all-articles
+  margin: 144px 0 50px 247px
+  width: 46%
+
+
+.little-article
+  font-size: 13px
+  color: gray
+  font-family: 'Montserrat Regular', sans-serif
+  text-transform: uppercase
+  margin-bottom: 12px
+  letter-spacing: 2px
+
+
+.main-article
+  color: white
+  font-size: 53px
+  font-family: 'Montserrat Bold', sans-serif
+  margin-bottom: 70px
+
+.main-buttons
+  width: 170px
+  height: 45px
+  background-color: transparent
+  border: 2px solid white
+  margin-right: 10px
+  cursor: pointer
+  transition: all 0.5s ease
+
+
+.main-buttons:hover
+  border: none
+  background-color: green
+  cursor: pointer
+  transition: all 0.5s ease
+
+
+.main-buttons a
+  cursor: pointer
+  text-decoration: none
+  color: white
+  text-transform: uppercase
+  font-size: 11px
+  letter-spacing: 1px
+  font-weight: 600
+  font-family: 'Montserrat Regular', sans-serif
+
+
+#register_form
+  display: none
+  width: 70%
+  position: fixed
+  top: 0
+  left: 240px
+  background-color: gray
+
+
+.form
+  padding: 30px 0 0 50px
+  width: 70%
+
+
+.form-fields
+  background-color: transparent
+  border: none
+  border-bottom: 1px solid darkgray
+  margin-bottom: 15px
+  padding: 15px 0
+  width: 92%
+  font-family: 'Montserrat Regular', sans-serif
+  outline: none
+  color: white
+  font-size: 14px
+  text-decoration: none
+
+
+#message
+  color: gray
+  font-family: 'Montserrat Regular', sans-serif
+
+
+.form_contain
+  background: url("img/register-bg.jpg") no-repeat
+/*background-size: cover;*/
+
+
+.container
+  width: 100%
+  background-color: black
+  display: flex
+  justify-content: space-between
+  height: 100vh
+
+
+.info
+  background-color: black
+  color: white
+  width: 30%
+  padding: 30px 0 0 50px
+
+
+.form-articles
+  color: white
+  font-size: 12px
+  font-family: 'Montserrat Regular', sans-serif
+  margin-bottom: 20px
+  text-transform: uppercase
+  letter-spacing: 1px
+
+
+.submit
+  /*background-color: #2e7b2e;*/
+  background-color: green
+  border: none
+  width: 92%
+  height: 40px
+  margin: 20px 0
+  color: white
+  font-size: 12px
+  text-transform: uppercase
+  font-family: 'Montserrat Regular', sans-serif
+  cursor: pointer
+  transition: all 0.5s ease
+
+
+.submit:hover
+  background-color: black
+  transition: all 0.5s ease
+
+
+.contacts-name
+  color: green
+  font-family: 'Montserrat Regular', sans-serif
+  font-size: 15px
+  margin: 20px 0
+
+
+.data
+  color: gray
+  line-height: 25px
+  font-size: 15px
+  font-family: 'Montserrat Regular', sans-serif
+  margin-bottom: 25px
+
+
+.contacts-icons
+  display: flex
+  justify-content: space-evenly
+  position: center
+
+
+.icons-reg
+  display: inline-block
+  margin-bottom: 15px
+  cursor: pointer
+  transition: all 0.5s ease
+
+
+.icons-reg img
+  width: 18px
+  margin: 7.5px
+
+
+.icons-logo-reg
+  position: absolute
+  right: 200px
+  top: 480px
+  display: block
+
+
+.icons-reg i:hover
+  color: green
+  transition: all 0.5s ease
+
+
+.close
+  position: absolute
+  top: 20px
+  right: 20px
+
+
+.close img
+  width: 14px
+  cursor: pointer
+
+
+.errorName,
+.errorLengthName,
+.errorStringName,
+.errorPassword,
+.errorLengthPassword,
+.errorConfirm,
+.errorEmail,
+.errorInputsEmail,
+.errorSymb,
+.errorLoginEmail,
+.errorInputsLoginEmail
+  display: none
+  color: red
+  position: absolute
+  top: 120px
+  left: 50px
+
+
+.errorEmail,
+.errorInputsEmail
+  top: 180px
+
+
+.errorPassword,
+.errorLengthPassword,
+.errorSymb
+  top: 242px
+
+
+.errorConfirm
+  top: 306px
+
+
+.errorLoginEmail,
+.errorInputsLoginEmail
+  top: 39%
+  left: 28%
+
+
+.checkEmail
+  position: absolute
+  top: 10%
+  right: 40%
+  display: none
+  width: 365px
+  height: 50px
+  text-align: center
+  padding: 15px
+  background-color: transparent
+  border: 2px solid green
+  color: white
+
+
+/*Login*/
+
+.login_form
+  background-color: black
+  width: 70%
+  display: none
+  position: fixed
+  top: 0
+  left: 215px
+  height: 100vh
+  padding: 20px 0 0 50px
+
+
+.aligning
+  margin: 20% auto
+  width: 50%
+
+
+
+
