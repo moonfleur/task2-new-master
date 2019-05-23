@@ -10,10 +10,10 @@ html, body {
 
 .homeBtn {
     position: absolute;
-    top: 11px;
-    width: 155px;
+    top: 71px;
+    width: 171px;
     height: 38px;
-    left: 34%;
+    left: 11px;
     background-color: green;
     border: none;
     transition: all 0.5s ease;
